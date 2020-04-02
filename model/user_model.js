@@ -26,4 +26,14 @@ module.exports = class User
     }
 
 
-}
+    // methode de sauvegarde
+    save()
+    {
+        getUserJson((users) => {
+            users.push(this);
+            fs.writeFile(folder, JSON.stringify(users), (err) => {
+                console.log(err);
+            });
+        });
+    };
+};
