@@ -5,15 +5,15 @@ const User = require('../model/user_model');
 exports.getAddUser = (req, res) => {
     res.render('formulaire', {
         pageTitle : 'Formulaire de nom',
-        path: ''
+        path: '/users'
     });
 };
 
 
 // permet de recuperer et sauvegarder les infos renseigner dans l'input
 exports.postUser = (req, res) => {
-    const user = new User(req.body.name);
-    user.save();
+    const users = new User(req.body.name);
+    users.save();
     res.redirect('/');
 };
 
