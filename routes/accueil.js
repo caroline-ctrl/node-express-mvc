@@ -7,10 +7,7 @@ const router = express.Router();
 
 
 // affiche le nom dans l'accueil
-router.get('/', (req, res) => {
-    const users = formData.users;
-    res.render('accueil', {pageTitle : 'Accueil', path: '', users: users});
-});
+router.get('/', );
 
 
 module.exports = router;
