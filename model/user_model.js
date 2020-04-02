@@ -36,4 +36,11 @@ module.exports = class User
             });
         });
     };
+
+
+    // methode static qui recupère tout
+    static fetchAll(callback)
+    {
+        getUserJson(callback);
+    }
 };
