@@ -1,0 +1,14 @@
+<%- include('includes/header.ejs') %>
+<%- include('includes/navbar.ejs') %>
+
+    <div class="container">
+        <h1>Votre nom</h1>
+        <form action="/user-create" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Enter votre nom" name="name">
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+
+<%- include('includes/footer.ejs') %>

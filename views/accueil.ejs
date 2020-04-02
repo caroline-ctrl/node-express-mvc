@@ -1,0 +1,14 @@
+<%- include('includes/header.ejs') %>
+<%- include('includes/navbar.ejs') %>
+
+<div class="container">
+    <h1>Bienvenue</h1>
+
+    <% if(users.length > 0) { %>
+        <% for(let user of users) { %>
+            <h3><%= user.name %>, vous avez bien fait de venir sur notre site !</h3>
+        <% } %>
+    <% } %>
+</div>
+
+<%- include('includes/footer.ejs') %>
