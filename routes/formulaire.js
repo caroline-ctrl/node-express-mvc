@@ -10,10 +10,7 @@ router.get('/users', );
 
 
 // recupère le contenu de l'input
-router.post('/user-create', (req, res) => {
-    users.push({name: req.body.name});
-    res.redirect('/');
-});
+router.post('/user-create', );
 
 
 exports.routes = router;
